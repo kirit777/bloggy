@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'STIX Two Math', serif;
+}
+
+nav{
+    background-color: rgb(238, 62, 91);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+
+
+    & .nav_title{
+        // background-color: purple;
+        height: 100%;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & h3{
+            color: white;
+            font-size: 2rem;
+
+            &:hover{
+                animation: title 1.5s infinite linear;
+                
+                @keyframes title {
+                    0%{
+                
+                    }
+                    25%{
+                        letter-spacing: .3rem;
+                        font-size: 2.1rem;
+                    }
+                    50%{
+                        letter-spacing: .5rem;
+                        font-size: 2.4rem;
+                    }
+                    75%{
+                        letter-spacing: .3rem;
+                        font-size: 2.1rem;
+                    }
+                    100%{
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    & .nav_menu{
+       height: 100%;
+    //    background-color: yellow;
+       width: 100%;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+
+       
+       & .menu_item{
+           margin-right: 4rem;
+               font-size: 1.2rem;
+               color: white;
+               font-weight: 500;
+               text-decoration: none;
+
+               &:hover{
+                   color: yellow;
+               }
+        
+       }
+       & .active{
+
+        text-decoration: underline;
+        text-decoration-thickness: .3rem;
+        
+        animation: anim 1s  infinite linear;
+
+        @keyframes anim {
+            from {text-decoration-color: yellow;}
+            to {text-decoration-color: green;}
+        }
+
+       }
+
+       & .ac{
+        position: relative;
+        display: inline-block;
+        
+
+        &:hover .hid_div{
+            display: block;
+        }
+       }
+
+       & .hid_div{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            top: 100%;
+            right: 5%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 10;
+            width: 160px;
+
+            & a{
+                display: block;
+                color: rgb(238, 62, 91);
+                padding: 12px 16px;
+                min-width: 160px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(238, 62, 91);
+                    color: white;
+                }
+            }
+       }
+    }
+}
+
+.hero{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    
+    
+
+    & .colm{
+        height: auto;
+        width: 100%;
+        padding: 2rem;
+        box-shadow: 1px 1px 5px black;
+        margin-top: 2rem;
+        border-radius: 10px;
+       // background-color: aquamarine;
+
+
+        & h2{
+            width: 100%;
+            text-align: center;
+            color: rgb(238, 62, 91) ;
+            margin-top: 1.5rem;
+            font-weight: 900;
+        }
+
+
+        & .dated{
+            color: rgb(121, 108, 108);
+            width: 100%;
+            text-align: center;
+        }
+
+       
+       
+        & .read_btn{
+            width: 10rem;
+            border: rgb(238, 62, 91) solid 2px;
+            padding: .3rem;
+            border-radius: 7px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            letter-spacing: .1rem;
+
+            &:hover{
+                background-color: rgb(238, 62, 91);
+                color: white;
+                box-shadow: 1px 1px 5px black;
+                cursor: pointer;
+            }
+        }
+        & .add_img{
+            height: 70px;
+            width: 70px;
+        }
+
+        & .user_img{
+            height: 200px;
+            width: 200px;
+        }
+
+        & .login_box{
+            padding-top: 2.4rem;
+        }
+
+        & .left_img{
+            height: 100%;
+            width: 100%;
+        }
+
+        & .social{
+            
+            
+            & .single{
+                display: flex;
+                color: white;
+                font-size: 2rem;
+                position: relative;
+              
+                & input{
+                    padding-left: 6%;
+                }
+
+                & i{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 5%;
+                    border-top-left-radius: 10%;
+                    border-bottom-left-radius: 10%;
+                    background-color: rgb(238, 62, 91);
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
+    }
+}
+
+
+.footer_div{
+    height: 30px;
+    width: 100%;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   color: white;
+   display: flex;
+   justify-content: center;
+    background-color: rgb(238, 62, 91);
+}
