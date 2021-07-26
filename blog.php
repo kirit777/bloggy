@@ -48,8 +48,8 @@ if($_GET["id"] != null){
             <h3>Bloggy</h3>
         </div>
         <div class="nav_menu">
-            <a href="#" class="menu_item">Home</a>
-            <a href="#" class="menu_item">Favorite</a>
+            <a href="index.php" class="menu_item">Home</a>
+            <a href="favorite.php" class="menu_item">Favorite</a>
             <a href="author.php" class="menu_item">Author</a>
             <div class="ac"><a href="#" class="menu_item">Account </a>
                 <div class="hid_div">
